@@ -1,0 +1,5 @@
+format_video: "bestvideo*+bestaudio/best"
+format_audio: "bestaudio/best"
+extra:
+  writethumbnail: true
+  addmetadata: true

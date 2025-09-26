@@ -1,0 +1,48 @@
+# Konfigurasi umum (bisa di-override via config/local.yaml)
+
+# Path
+output_dir: "downloads"
+log_dir: "logs"
+cookies_dir: "cookies"
+
+# UI & yt-dlp umum
+restrict_filenames: false
+concurrent_fragment_downloads: 5
+socket_timeout: 30
+rich_progress: true
+
+# Template nama file (yt-dlp akan men-substitute %(field)s)
+filename_template_video: "%(title)s [%(id)s].%(ext)s"
+filename_template_audio: "%(title)s [%(id)s].%(ext)s"
+
+# Template nama file gaya (baru)
+filename_template_video_simple: "%(title)s.%(ext)s"
+filename_template_video_nerd: "%(title)s [%(id)s] [%(format_note|resolution)s].%(ext)s"
+
+filename_template_audio_simple: "%(title)s.%(ext)s"
+filename_template_audio_nerd: "%(title)s [%(id)s] [%(acodec)s %(abr|tbr)sKbps].%(ext)s"
+
+# Default style
+filename_style_video: "simple"   # simple|nerd
+filename_style_audio: "simple"   # simple|nerd
+
+# Video defaults
+video_quality_default: "auto"    # auto|best|preset
+video_resolution_default: 720    # dipakai saat 'preset'
+video_codec_pref: "h264"         # h264|av1|vp9
+allow_h265: false                # HEVC (kompat mungkin rendah)
+merge_output_format: "mp4"       # auto|mp4|webm (default permintaan user: mp4)
+
+# Audio defaults (default permintaan user)
+audio_format_default: "mp3"      # best|mp3|ogg|wav|opus
+audio_bitrate_default: "best"    # "best" kami map ke 320 kbps untuk mp3
+audio_prefer_better: true
+embed_thumbnail: true
+
+# Provider defaults untuk quality=auto
+provider_defaults:
+  youtube: "bestvideo*+bestaudio/best"
+  instagram: "best"
+  tiktok: "best"
+  facebook: "best"
+  x: "best"

@@ -1,0 +1,47 @@
+online-media-dl/
+├─ README.md
+├─ LICENSE
+├─ .gitignore
+├─ requirements.txt
+├─ pyproject.toml
+├─ setup.cfg
+├─ config/
+│  ├─ default.yaml
+│  ├─ local.yaml
+│  └─ providers/
+│     ├─ youtube.yaml
+│     ├─ instagram.yaml
+│     ├─ tiktok.yaml
+│     ├─ facebook.yaml
+│     └─ x.yaml
+├─ cookies/
+│  ├─ README.md
+│  ├─ youtube.txt
+│  ├─ instagram.txt
+│  ├─ tiktok.txt
+│  ├─ facebook.txt
+│  └─ x.txt
+├─ logs/
+│  └─ .gitkeep
+├─ app/
+│  └─ src/
+│     └─ omdl/
+│        ├─ __init__.py
+│        ├─ cli.py
+│        ├─ menu.py
+│        ├─ config_loader.py
+│        ├─ downloader.py
+│        ├─ output.py
+│        ├─ utils.py
+│        ├─ constants.py
+│        └─ providers/
+│           ├─ __init__.py
+│           ├─ base.py
+│           ├─ youtube.py
+│           ├─ instagram.py
+│           ├─ tiktok.py
+│           ├─ facebook.py
+│           └─ x.py
+└─ scripts/
+   ├─ dev-setup.sh
+   └─ run.sh

@@ -1,0 +1,18 @@
+output_dir: /data/data/com.termux/files/home/storage/downloads/omdl
+default_mode: audio
+default_quality: best
+audio_codec_default: mp3
+audio_quality_default: '320'
+embed_thumbnail: false
+provider_defaults:
+  youtube: bestvideo*+bestaudio/best
+filename_style_video: simple
+filename_style_audio: simple
+video_quality_default: best
+video_codec_pref: h264
+allow_h265: false
+audio_prefer_better: true
+audio_format_default: mp3
+audio_bitrate_default: best
+merge_output_format: mp4
+video_resolution_default: 720

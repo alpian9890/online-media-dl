@@ -1,0 +1,21 @@
+# Online Media Downloader — Batch file
+#
+# Cara pakai:
+# 1) Pilih 'mode':
+#    - auto  : download media asli (video/foto) sesuai sumber
+#    - audio : ekstrak audio saja (mis. untuk YouTube -> MP3/format audio lainnya)
+# 2) Pilih 'quality':
+#    - Untuk mode auto : 'auto' (biarkan yt-dlp memilih terbaik) atau format-string yt-dlp
+#      Contoh format-string (video <=1080p): bestvideo[height<=1080]+bestaudio/best
+#    - Untuk mode audio: 'best' atau 'bestaudio/best' (default akan dinormalisasi ke 'bestaudio/best')
+# 3) Tambahkan URL di bawah 'urls:' satu baris per URL (gunakan tanda ' - ').
+#
+
+
+mode: auto        # auto | audio
+quality: auto     # 'auto' | 'best' | format-string yt-dlp
+
+urls:
+  - https://youtu.be/xxxxxxxxxxx
+  - https://facebook.com/xxxxxx
+  - https://tiktok.com/xxxxxxxxx
